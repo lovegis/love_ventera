@@ -10,8 +10,8 @@ setuptools = "*"
 psycopg2-binary = "*"
 sqlalchemy = "*"
 pandas = "*"
-xml2db = "*"
-xmltoxsd = "*"
+#xml2db = "*"
+#xmltoxsd = "*"
 
 
 [requires]
