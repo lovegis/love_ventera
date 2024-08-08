@@ -1,10 +1,10 @@
 # run commands against DB as postgres user using postgres password entered
 
 # pre-requirement 1 - create 'gis_dba' role to own created database in requirement 1
-psql -f src/sql/gis_dba_role.create.sql postgresql://postgres:postgres@localhost:5434
+psql -f src/sql/gis_dba_role.create.sql postgresql://postgres:pg_password_to_replace@localhost:5434
 
 # requirement 1 a - create the DB
-psql -f src/sql/ventera_db.create.sql postgresql://postgres:postgres@localhost:5434
+psql -f src/sql/ventera_db.create.sql postgresql://postgres:pg_password_to_replace@localhost:5434
 
 # requirement 1 b - create PostGIS extension
 python src/venpy.py db_object_creation postgis_extension.create.sql

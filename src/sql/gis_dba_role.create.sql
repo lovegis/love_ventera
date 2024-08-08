@@ -8,5 +8,5 @@ CREATE ROLE gis_dba2 WITH
   CREATEDB
   CREATEROLE
   NOREPLICATION
-  PASSWORD 'gis_dba';
+  PASSWORD 'gis_dba_password_to_replace';
 

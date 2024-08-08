@@ -4,7 +4,7 @@ import sys, subprocess
 from data_access import DBConnection
 
 # For simplicity set DB connection settings as global variables (these should be accessed securely through a "vault" or AWS Secrets Manager)
-GIS_PASS = 'gis_dba'
+GIS_PASS = 'gis_dba_password_to_replace'
 GIS_USER = 'gis_dba'
 HOST = 'localhost'
 PORT = 5434
