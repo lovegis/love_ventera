@@ -1,0 +1,15 @@
+*~
+*#
+*.swp
+.idea
+.venv
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+/.cache
+
+/build
+/dist
