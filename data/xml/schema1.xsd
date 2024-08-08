@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://standards.iso.org/iso/19115/-3/mcc/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="schema2.xsd" namespace="http://standards.iso.org/iso/19115/-3/gco/1.0" />
+  <xs:import schemaLocation="schema7.xsd" namespace="http://standards.iso.org/iso/19115/-3/gex/1.0" />
+  <xs:import schemaLocation="schema12.xsd" namespace="http://standards.iso.org/iso/19115/-3/gcx/1.0" />
+  <xs:element name="MD_Identifier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="code">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" xmlns:q1="http://standards.iso.org/iso/19115/-3/gcx/1.0" ref="q1:FileName" />
+              <xs:element minOccurs="0" xmlns:q2="http://standards.iso.org/iso/19115/-3/gco/1.0" ref="q2:CharacterString" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="codeSpace">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:q3="http://standards.iso.org/iso/19115/-3/gco/1.0" ref="q3:CharacterString" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MD_ScopeCode">
+    <xs:complexType>
+      <xs:attribute name="codeList" type="xs:string" use="required" />
+      <xs:attribute name="codeListValue" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MD_ProgressCode">
+    <xs:complexType>
+      <xs:attribute name="codeList" type="xs:string" use="required" />
+      <xs:attribute name="codeListValue" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MD_SpatialRepresentationTypeCode">
+    <xs:complexType>
+      <xs:attribute name="codeList" type="xs:string" use="required" />
+      <xs:attribute name="codeListValue" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MD_Scope">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="level">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_ScopeCode">
+                <xs:complexType>
+                  <xs:attribute name="codeList" type="xs:string" use="required" />
+                  <xs:attribute name="codeListValue" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="extent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:q4="http://standards.iso.org/iso/19115/-3/gex/1.0" ref="q4:EX_Extent" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

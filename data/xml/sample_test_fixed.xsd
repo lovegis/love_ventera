@@ -1,0 +1,2174 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MD_Metadata" minOccurs="0" maxOccurs="1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="metadataIdentifier" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_Identifier" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="code" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="codeSpace" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="defaultLocale" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PT_Locale" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="language" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LanguageCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="characterEncoding" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_CharacterSetCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="metadataScope" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_MetadataScope" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="resourceScope" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_ScopeCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contact" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CI_Responsibility" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="role" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CI_RoleCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="party" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CI_Organisation" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="name" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="contactInfo" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Contact" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="address" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_Address" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="electronicMailAddress" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="{http://standards.iso.org/iso/19115/-3/gco/1.0}nilReason" type="xs:string"/>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="individual" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Individual" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="name" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="{http://standards.iso.org/iso/19115/-3/gco/1.0}nilReason" type="xs:string"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="positionName" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="{http://standards.iso.org/iso/19115/-3/gco/1.0}nilReason" type="xs:string"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dateInfo" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CI_Date" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="date" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="DateTime" minOccurs="0" maxOccurs="1" type="xs:dateTime"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="dateType" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CI_DateTypeCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dateInfo" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CI_Date" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="date" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="DateTime" minOccurs="0" maxOccurs="1" type="xs:dateTime"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="dateType" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CI_DateTypeCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="metadataStandard" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CI_OnlineResource" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="linkage" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="function" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CI_OnLineFunctionCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="spatialRepresentationInfo" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_ReferenceSystem" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="referenceSystemIdentifier" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_Identifier" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="code" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:integer"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="identificationInfo" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_DataIdentification" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="citation" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CI_Citation" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="title" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="alternateTitle" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Date" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="DateTime" minOccurs="0" maxOccurs="1" type="xs:dateTime"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="dateType" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_DateTypeCode" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence/>
+                                                      <xs:attribute name="codeList" type="xs:string"/>
+                                                      <xs:attribute name="codeListValue" type="xs:string"/>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="identifier" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Identifier" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="code" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="abstract" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="purpose" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="status" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_ProgressCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="spatialRepresentationType" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_SpatialRepresentationTypeCode" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence/>
+                              <xs:attribute name="codeList" type="xs:string"/>
+                              <xs:attribute name="codeListValue" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="spatialResolution" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_Resolution" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="equivalentScale" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_RepresentativeFraction" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="denominator" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Integer" minOccurs="0" maxOccurs="1" type="xs:integer"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="extent" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="EX_Extent" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="geographicElement" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="EX_GeographicBoundingBox" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="westBoundLongitude" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Decimal" minOccurs="0" maxOccurs="1" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="eastBoundLongitude" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Decimal" minOccurs="0" maxOccurs="1" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="southBoundLatitude" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Decimal" minOccurs="0" maxOccurs="1" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="northBoundLatitude" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Decimal" minOccurs="0" maxOccurs="1" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="resourceMaintenance" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_MaintenanceInformation" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="maintenanceAndUpdateFrequency" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_MaintenanceFrequencyCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="contact" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Responsibility" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="role" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_RoleCode" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence/>
+                                                      <xs:attribute name="codeList" type="xs:string"/>
+                                                      <xs:attribute name="codeListValue" type="xs:string"/>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="party" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_Organisation" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="name" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="contactInfo" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_Contact" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="phone" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_Telephone" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="number" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="numberType" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_TelephoneTypeCode" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence/>
+                                                            <xs:attribute name="codeList" type="xs:string"/>
+                                                            <xs:attribute name="codeListValue" type="xs:string"/>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="address" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_Address" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="deliveryPoint" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="city" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="postalCode" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:integer"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="country" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="electronicMailAddress" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="descriptiveKeywords" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_Keywords" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="type" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_KeywordTypeCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="descriptiveKeywords" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_Keywords" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="keyword" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:integer"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="type" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_KeywordTypeCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="thesaurusName" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Citation" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="title" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="alternateTitle" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_Date" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="Date" minOccurs="0" maxOccurs="1" type="xs:date"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="dateType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_DateTypeCode" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence/>
+                                                            <xs:attribute name="codeList" type="xs:string"/>
+                                                            <xs:attribute name="codeListValue" type="xs:string"/>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="resourceConstraints" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_LegalConstraints" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="accessConstraints" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_RestrictionCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="useConstraints" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_RestrictionCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="otherConstraints" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="defaultLocale" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PT_Locale" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="language" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="LanguageCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="country" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CountryCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="characterEncoding" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_CharacterSetCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="supplementalInformation" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="{http://standards.iso.org/iso/19115/-3/gco/1.0}nilReason" type="xs:string"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contentInfo" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_ImageDescription" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="attributeDescription" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="RecordType" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processingLevelCode" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_Identifier" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="code" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="attributeGroup" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_AttributeGroup" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="contentType" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_CoverageContentTypeCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="attribute" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Band" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sequenceIdentifier" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MemberName" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="attributeType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="TypeName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="aName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="resourceLineage" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LI_Lineage" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="scope" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MD_Scope" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="level" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_ScopeCode" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence/>
+                                          <xs:attribute name="codeList" type="xs:string"/>
+                                          <xs:attribute name="codeListValue" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="source" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LI_Source" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="sourceCitation" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Citation" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="title" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="alternateTitle" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_Date" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="Date" minOccurs="0" maxOccurs="1" type="xs:date"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="dateType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_DateTypeCode" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence/>
+                                                            <xs:attribute name="codeList" type="xs:string"/>
+                                                            <xs:attribute name="codeListValue" type="xs:string"/>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="sourceMetadata" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CI_Citation" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="title" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="alternateTitle" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="CI_Date" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="Date" minOccurs="0" maxOccurs="1" type="xs:date"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="dateType" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="CI_DateTypeCode" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence/>
+                                                            <xs:attribute name="codeList" type="xs:string"/>
+                                                            <xs:attribute name="codeListValue" type="xs:string"/>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="scope" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="MD_Scope" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="level" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MD_ScopeCode" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence/>
+                                                      <xs:attribute name="codeList" type="xs:string"/>
+                                                      <xs:attribute name="codeListValue" type="xs:string"/>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="extent" minOccurs="0" maxOccurs="1">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="EX_Extent" minOccurs="0" maxOccurs="1">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="geographicElement" minOccurs="0" maxOccurs="1">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="EX_GeographicDescription" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="geographicIdentifier" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="MD_Identifier" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="code" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence>
+                                                            <xs:element name="FileName" minOccurs="0" maxOccurs="1">
+                                                            <xs:complexType>
+                                                            <xs:sequence/>
+                                                            <xs:attribute name="src" type="xs:string"/>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                            </xs:complexType>
+                                                            </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="processStep" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LE_ProcessStep" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="description" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CharacterString" minOccurs="0" maxOccurs="1" type="xs:string"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="{http://www.w3.org/2001/XMLSchema-instance}schemaLocation" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

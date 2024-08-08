@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdb:MD_Metadata xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.1" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19115/-3/mds/2.0 http://standards.iso.org/iso/19115/-3/mds/2.0/mds.xsd">
+	<mdb:metadataIdentifier>
+		<mcc:MD_Identifier>
+			<mcc:code>
+				<gco:CharacterString>47cacc4a-a468-434a-aa97-929a962d0d32</gco:CharacterString>
+			</mcc:code>
+			<mcc:codeSpace>
+				<gco:CharacterString>urn:uuid</gco:CharacterString>
+			</mcc:codeSpace>
+		</mcc:MD_Identifier>
+	</mdb:metadataIdentifier>
+	<mdb:defaultLocale>
+		<lan:PT_Locale id="EN">
+			<lan:language>
+				<lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+			</lan:language>
+			<lan:characterEncoding>
+				<lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="anyValidURI" />
+			</lan:characterEncoding>
+		</lan:PT_Locale>
+	</mdb:defaultLocale>
+	<mdb:metadataScope>
+		<mdb:MD_MetadataScope>
+			<mdb:resourceScope>
+				<mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset" />
+			</mdb:resourceScope>
+		</mdb:MD_MetadataScope>
+	</mdb:metadataScope>
+	<mdb:contact>
+		<cit:CI_Responsibility>
+			<cit:role>
+				<cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+			</cit:role>
+			<cit:party>
+				<cit:CI_Organisation>
+					<cit:name>
+						<gco:CharacterString>USDA NRCS Dynamic Soils Hub</gco:CharacterString>
+					</cit:name>
+					<cit:contactInfo>
+						<cit:CI_Contact>
+							<cit:address>
+								<cit:CI_Address>
+									<cit:electronicMailAddress gco:nilReason="missing">
+										<gco:CharacterString />
+									</cit:electronicMailAddress>
+								</cit:CI_Address>
+							</cit:address>
+						</cit:CI_Contact>
+					</cit:contactInfo>
+					<cit:individual>
+						<cit:CI_Individual>
+							<cit:name gco:nilReason="missing">
+								<gco:CharacterString />
+							</cit:name>
+							<cit:positionName gco:nilReason="missing">
+								<gco:CharacterString />
+							</cit:positionName>
+						</cit:CI_Individual>
+					</cit:individual>
+				</cit:CI_Organisation>
+			</cit:party>
+		</cit:CI_Responsibility>
+	</mdb:contact>
+	<mdb:dateInfo>
+		<cit:CI_Date>
+			<cit:date>
+				<gco:DateTime>2023-07-20T14:32:48</gco:DateTime>
+			</cit:date>
+			<cit:dateType>
+				<cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+			</cit:dateType>
+		</cit:CI_Date>
+	</mdb:dateInfo>
+	<mdb:dateInfo>
+		<cit:CI_Date>
+			<cit:date>
+				<gco:DateTime>2023-07-21T19:08:35</gco:DateTime>
+			</cit:date>
+			<cit:dateType>
+				<cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+			</cit:dateType>
+		</cit:CI_Date>
+	</mdb:dateInfo>
+	<mdb:metadataStandard>
+		<cit:CI_OnlineResource>
+			<cit:linkage>
+				<gco:CharacterString>http://localhost:8080/geonetwork/srv/api/records/b3613f4a-7e5b-43e7-b4cd-4aea5937fcf9</gco:CharacterString>
+			</cit:linkage>
+			<cit:function>
+				<cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata" />
+			</cit:function>
+		</cit:CI_OnlineResource>
+	</mdb:metadataStandard>
+	<mdb:spatialRepresentationInfo>
+		<mrs:MD_ReferenceSystem>
+			<mrs:referenceSystemIdentifier>
+				<mcc:MD_Identifier>
+					<mcc:code>
+						<gco:CharacterString>4326</gco:CharacterString>
+					</mcc:code>
+				</mcc:MD_Identifier>
+			</mrs:referenceSystemIdentifier>
+		</mrs:MD_ReferenceSystem>
+	</mdb:spatialRepresentationInfo>
+	<mdb:identificationInfo>
+		<mri:MD_DataIdentification>
+			<mri:citation>
+				<cit:CI_Citation>
+					<cit:title>
+						<gco:CharacterString>Water Quality Model</gco:CharacterString>
+					</cit:title>
+					<cit:alternateTitle>
+						<gco:CharacterString>WQM</gco:CharacterString>
+					</cit:alternateTitle>
+					<cit:date>
+						<cit:CI_Date>
+							<cit:date>
+								<gco:DateTime>2023-06-30T12:45:00</gco:DateTime>
+							</cit:date>
+							<cit:dateType>
+								<cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+							</cit:dateType>
+						</cit:CI_Date>
+					</cit:date>
+					<cit:identifier>
+						<mcc:MD_Identifier>
+							<mcc:code>
+								<gco:CharacterString>47cacc4a-a468-434a-aa97-929a962d0d32</gco:CharacterString>
+							</mcc:code>
+						</mcc:MD_Identifier>
+					</cit:identifier>
+				</cit:CI_Citation>
+			</mri:citation>
+			<mri:abstract>
+				<gco:CharacterString>Each soil map unit is categorized into one of four nutrient leaching potentials and one of four soil runoff potentials based on its published SSURGO map unit components. These ratings (low, moderate, moderately high, or high) were determined from the following properties of the components within each soil map unit; hydrologic soil group, taxonomic order, slope, coarse fragment volume, K factor, water table depth and kind. Ratings are provided as individual rasters. Included are seperate rasters for undrained and drained conditions to accommodate soil map units with components having dual hydrologic soil groups, The Conservation Assessment Ranking Tool (CART) uses thresholds to represent whether conservation planning criteria have been achieved, or, if additional practices are necessary to meet them. The CART threshold values included in the DSHub Water Quality Models are the product of the leaching and runoff potentials and a representation of the rainfall-runoff erosivity factor (R-Factor) derived from isoerodent maps published in the Agriculture Handbook Number 703. Threshold values are provided as individual rasters for undrained and drained conditions.</gco:CharacterString>
+			</mri:abstract>
+			<mri:purpose>
+				<gco:CharacterString>The DSHub Water Quality Models contain soil map unit ratings for nutrient leaching and soil runoff potential and Conservation Assessment Ranking Tool (CART) threshold values for nonpoint nitrogen surface loss, nonpoint phosphorus surface loss, sediment transport, nonpoint nitrogen leaching loss, and nonpoint phosphorus leaching loss. Ratings and threshold values are provided for undrained and drained conditions to accomondate soils assigned dual hydrogic soil groups.</gco:CharacterString>
+			</mri:purpose>
+			<mri:status>
+				<mcc:MD_ProgressCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed" />
+			</mri:status>
+			<mri:spatialRepresentationType>
+				<mcc:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid" />
+			</mri:spatialRepresentationType>
+			<mri:spatialResolution>
+				<mri:MD_Resolution>
+					<mri:equivalentScale>
+						<mri:MD_RepresentativeFraction>
+							<mri:denominator>
+								<gco:Integer>50000</gco:Integer>
+							</mri:denominator>
+						</mri:MD_RepresentativeFraction>
+					</mri:equivalentScale>
+				</mri:MD_Resolution>
+			</mri:spatialResolution>
+			<mri:extent>
+				<gex:EX_Extent>
+					<gex:geographicElement>
+						<gex:EX_GeographicBoundingBox>
+							<gex:westBoundLongitude>
+								<gco:Decimal>144.5634</gco:Decimal>
+							</gex:westBoundLongitude>
+							<gex:eastBoundLongitude>
+								<gco:Decimal>144.9587</gco:Decimal>
+							</gex:eastBoundLongitude>
+							<gex:southBoundLatitude>
+								<gco:Decimal>13.1824</gco:Decimal>
+							</gex:southBoundLatitude>
+							<gex:northBoundLatitude>
+								<gco:Decimal>13.6544</gco:Decimal>
+							</gex:northBoundLatitude>
+						</gex:EX_GeographicBoundingBox>
+					</gex:geographicElement>
+				</gex:EX_Extent>
+			</mri:extent>
+			<mri:resourceMaintenance>
+				<mmi:MD_MaintenanceInformation>
+					<mmi:maintenanceAndUpdateFrequency>
+						<mmi:MD_MaintenanceFrequencyCode codeListValue="asNeeded" codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode" />
+					</mmi:maintenanceAndUpdateFrequency>
+					<mmi:contact>
+						<cit:CI_Responsibility>
+							<cit:role>
+								<cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+							</cit:role>
+							<cit:party>
+								<cit:CI_Organisation>
+									<cit:name>
+										<gco:CharacterString>USDA NRCS Dynamic Soils Hub</gco:CharacterString>
+									</cit:name>
+									<cit:contactInfo>
+										<cit:CI_Contact>
+											<cit:phone>
+												<cit:CI_Telephone>
+													<cit:number>
+														<gco:CharacterString>202-270-2791</gco:CharacterString>
+													</cit:number>
+													<cit:numberType>
+														<cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice" />
+													</cit:numberType>
+												</cit:CI_Telephone>
+											</cit:phone>
+											<cit:address>
+												<cit:CI_Address>
+													<cit:deliveryPoint>
+														<gco:CharacterString>1400 Independence Ave SW</gco:CharacterString>
+													</cit:deliveryPoint>
+													<cit:city>
+														<gco:CharacterString>Washington</gco:CharacterString>
+													</cit:city>
+													<cit:postalCode>
+														<gco:CharacterString>20250</gco:CharacterString>
+													</cit:postalCode>
+													<cit:country>
+														<gco:CharacterString>United States</gco:CharacterString>
+													</cit:country>
+													<cit:electronicMailAddress>
+														<gco:CharacterString>andrew.paolucci@usda.gov</gco:CharacterString>
+													</cit:electronicMailAddress>
+												</cit:CI_Address>
+											</cit:address>
+										</cit:CI_Contact>
+									</cit:contactInfo>
+								</cit:CI_Organisation>
+							</cit:party>
+						</cit:CI_Responsibility>
+					</mmi:contact>
+				</mmi:MD_MaintenanceInformation>
+			</mri:resourceMaintenance>
+			<mri:descriptiveKeywords>
+				<mri:MD_Keywords>
+					<mri:keyword>
+						<gco:CharacterString>water quality</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>water quality index</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>nitrogen leaving drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>nitrogen leaving undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>nitrogen runoff drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>nitrogen runoff undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>phosphorus leaving drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>phosphorus leaving undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>phosphorus runoff drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>phosphorus runoff undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>sediment runoff drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>sediment runoff undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>leach drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>leach undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>runoff drained</gco:CharacterString>
+					</mri:keyword>
+					<mri:keyword>
+						<gco:CharacterString>runoff undrained</gco:CharacterString>
+					</mri:keyword>
+					<mri:type>
+						<mri:MD_KeywordTypeCode codeListValue="theme" codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode" />
+					</mri:type>
+				</mri:MD_Keywords>
+			</mri:descriptiveKeywords>
+			<mri:descriptiveKeywords>
+				<mri:MD_Keywords>
+					<mri:keyword>
+						<gco:CharacterString>66010</gco:CharacterString>
+					</mri:keyword>
+					<mri:type>
+						<mri:MD_KeywordTypeCode codeListValue="place" codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_KeywordTypeCode" />
+					</mri:type>
+					<mri:thesaurusName>
+						<cit:CI_Citation>
+							<cit:title>
+								<gco:CharacterString>FIPS County Codes</gco:CharacterString>
+							</cit:title>
+							<cit:alternateTitle>
+								<gco:CharacterString>2010 FIPS Codes for Counties and County Equivalent Entities</gco:CharacterString>
+							</cit:alternateTitle>
+							<cit:date>
+								<cit:CI_Date>
+									<cit:date>
+										<gco:Date>2023-06-30</gco:Date>
+									</cit:date>
+									<cit:dateType>
+										<cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+									</cit:dateType>
+								</cit:CI_Date>
+							</cit:date>
+						</cit:CI_Citation>
+					</mri:thesaurusName>
+				</mri:MD_Keywords>
+			</mri:descriptiveKeywords>
+			<mri:resourceConstraints>
+				<mco:MD_LegalConstraints>
+					<mco:accessConstraints>
+						<mco:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_RestrictionCode" />
+					</mco:accessConstraints>
+					<mco:useConstraints>
+						<mco:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_RestrictionCode" />
+					</mco:useConstraints>
+					<mco:otherConstraints>
+						<gco:CharacterString>Access Constraints: There are no limitations for access. Use Constraints: None. The USDA-NRCS office asks to be credited in derived products. Distribution Liability: In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</gco:CharacterString>
+					</mco:otherConstraints>
+				</mco:MD_LegalConstraints>
+			</mri:resourceConstraints>
+			<mri:defaultLocale>
+				<lan:PT_Locale>
+					<lan:language>
+						<lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+					</lan:language>
+					<lan:country>
+						<lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="United States" />
+					</lan:country>
+					<lan:characterEncoding>
+						<lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+					</lan:characterEncoding>
+				</lan:PT_Locale>
+			</mri:defaultLocale>
+			<mri:supplementalInformation gco:nilReason="missing">
+				<gco:CharacterString />
+			</mri:supplementalInformation>
+		</mri:MD_DataIdentification>
+	</mdb:identificationInfo>
+	<mdb:contentInfo>
+		<mrc:MD_ImageDescription>
+			<mrc:attributeDescription>
+				<gco:RecordType>Water Quality Model Results</gco:RecordType>
+			</mrc:attributeDescription>
+			<mrc:processingLevelCode>
+				<mcc:MD_Identifier>
+					<mcc:code>
+						<gco:CharacterString>WQM -14 bands</gco:CharacterString>
+					</mcc:code>
+				</mcc:MD_Identifier>
+			</mrc:processingLevelCode>
+			<mrc:attributeGroup>
+				<mrc:MD_AttributeGroup>
+					<mrc:contentType>
+						<mrc:MD_CoverageContentTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult" />
+					</mrc:contentType>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band1 - Nitrogen Leaving Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band2 - Nitrogen Leaving Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band3 - Nitrogen Runoff Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band4 - Nitrogen Runoff Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band5 - Phosphorus Leaving Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band6 - Phosphorus Leaving Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band7 - Phosphorus Runoff Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band8 - Phosphorus Runoff Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band9 - Sediment Runoff Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band10 - Sediment Runoff Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band11 - Leach Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band12 - Leach Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band13 - Runoff Drained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+					<mrc:attribute>
+						<mrc:MD_Band>
+							<mrc:sequenceIdentifier>
+								<gco:MemberName>
+									<gco:aName>
+										<gco:CharacterString>Band14 - Runoff Undrained</gco:CharacterString>
+									</gco:aName>
+									<gco:attributeType>
+										<gco:TypeName>
+											<gco:aName>
+												<gco:CharacterString>INTEGER</gco:CharacterString>
+											</gco:aName>
+										</gco:TypeName>
+									</gco:attributeType>
+								</gco:MemberName>
+							</mrc:sequenceIdentifier>
+						</mrc:MD_Band>
+					</mrc:attribute>
+				</mrc:MD_AttributeGroup>
+			</mrc:attributeGroup>
+		</mrc:MD_ImageDescription>
+	</mdb:contentInfo>
+	<mdb:resourceLineage>
+		<mrl:LI_Lineage>
+			<mrl:scope>
+				<mcc:MD_Scope>
+					<mcc:level>
+						<mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset" />
+					</mcc:level>
+				</mcc:MD_Scope>
+			</mrl:scope>
+			<mrl:source>
+				<mrl:LI_Source>
+					<mrl:description>
+						<gco:CharacterString>The Soil Survey Geographic Database (SSURGO) contains information about soil as collected by the National Cooperative Soil Survey over the course of a century. The information was gathered by walking over the land and observing the soil. Many soil samples were analyzed in laboratories.</gco:CharacterString>
+					</mrl:description>
+					<mrl:sourceCitation>
+						<cit:CI_Citation>
+							<cit:title>
+								<gco:CharacterString>Soil Survey Geographic Database</gco:CharacterString>
+							</cit:title>
+							<cit:alternateTitle>
+								<gco:CharacterString>SSURGO</gco:CharacterString>
+							</cit:alternateTitle>
+							<cit:date>
+								<cit:CI_Date>
+									<cit:date>
+										<gco:Date>2023-06-30</gco:Date>
+									</cit:date>
+									<cit:dateType>
+										<cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="adopted" />
+									</cit:dateType>
+								</cit:CI_Date>
+							</cit:date>
+						</cit:CI_Citation>
+					</mrl:sourceCitation>
+					<mrl:sourceMetadata>
+						<cit:CI_Citation>
+							<cit:title>
+								<gco:CharacterString>Soil Survey Geographic Database</gco:CharacterString>
+							</cit:title>
+							<cit:alternateTitle>
+								<gco:CharacterString>SSURGO</gco:CharacterString>
+							</cit:alternateTitle>
+							<cit:date>
+								<cit:CI_Date>
+									<cit:date>
+										<gco:Date>2023-06-15</gco:Date>
+									</cit:date>
+									<cit:dateType>
+										<cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="adopted" />
+									</cit:dateType>
+								</cit:CI_Date>
+							</cit:date>
+						</cit:CI_Citation>
+					</mrl:sourceMetadata>
+					<mrl:scope>
+						<mcc:MD_Scope>
+							<mcc:level>
+								<mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset" />
+							</mcc:level>
+							<mcc:extent>
+								<gex:EX_Extent>
+									<gex:geographicElement>
+										<gex:EX_GeographicDescription>
+											<gex:geographicIdentifier>
+												<mcc:MD_Identifier>
+													<mcc:code>
+														<gcx:FileName src="https://data.nal.usda.gov/dataset/soil-survey-geographic-database-ssurgo" />
+													</mcc:code>
+												</mcc:MD_Identifier>
+											</gex:geographicIdentifier>
+										</gex:EX_GeographicDescription>
+									</gex:geographicElement>
+								</gex:EX_Extent>
+							</mcc:extent>
+						</mcc:MD_Scope>
+					</mrl:scope>
+				</mrl:LI_Source>
+			</mrl:source>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>1. Query SSURGO Database for soil property data (coarse fragment content (num), water table kind (char), taxorder (char), hsg (char), Water table within 24” (boolean), slope (int), kfact (num). Calculate 4 runoff/leaching ratings: Runoff undrain rating, runoff drain rating, leaching undrain rating, leaching drain rating.</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>2. Query gSSURGO for raster data. Split into Tiles.</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>3. Spatial join soil property data with gSSURGO</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>4. Generate raster for Runoff/Leaving Rating (4)</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>5. Calculate Classified R-factor (less than 50 equal to 1, 50-150 equal to10, 150-250 equal to100, greater than 250 equal to 1000) and resample to 3 meter resolution. (connects with #6)</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>6. Using raster algebra (Runoff/Leaving Rating (4) + Classified R-factor) reclassify 4 outputs to create 10 raster threshold ratings: Nitrogen Leaching threshold (undrained), Nitrogen Leaching threshold (drained), Phosphorus Leaching threshold (undrained), Phosphorous Leaching threshold (drained), Nitrogen Runoff threshold (undrained), Nitrogen Runoff threshold (drained), Phosphorus Runoff threshold (undrained), Phosphorus Runoff threshold (drained), Sediment Transport threshold (undrained), Sediment Transport threshold (drained).</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+			<mrl:processStep>
+				<mrl:LE_ProcessStep>
+					<mrl:description>
+						<gco:CharacterString>7. Run function to create unique key based on all possible combinations of 10 threshold values to create final Water quality threshold.</gco:CharacterString>
+					</mrl:description>
+				</mrl:LE_ProcessStep>
+			</mrl:processStep>
+		</mrl:LI_Lineage>
+	</mdb:resourceLineage>
+</mdb:MD_Metadata>
+

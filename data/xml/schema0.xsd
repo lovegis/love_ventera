@@ -1,0 +1,1386 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name = "mdb:MD_Metadata">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mdb:metadataIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Identifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:code">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mcc:codeSpace">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:defaultLocale">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "lan:PT_Locale">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "lan:language">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "lan:characterEncoding">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type="xs:string" name="id"/>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:metadataScope">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mdb:MD_MetadataScope">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mdb:resourceScope">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:contact">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Responsibility">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:role">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:party">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Organisation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:name">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:contactInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Contact">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:address">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Address">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:electronicMailAddress">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+<xs:attribute type="xs:string" name="gco:nilReason"/>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:individual">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Individual">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:name">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+<xs:attribute type="xs:string" name="gco:nilReason"/>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:positionName">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+<xs:attribute type="xs:string" name="gco:nilReason"/>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:dateInfo"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:DateTime"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:dateType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:metadataStandard">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_OnlineResource">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:linkage">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:function">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:spatialRepresentationInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrs:MD_ReferenceSystem">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrs:referenceSystemIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Identifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:code">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: short" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:identificationInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:MD_DataIdentification">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:citation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Citation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:title">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:alternateTitle">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:DateTime"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:dateType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:identifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Identifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:code">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:abstract">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:purpose">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:status">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:spatialRepresentationType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:spatialResolution">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:MD_Resolution">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:equivalentScale">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:MD_RepresentativeFraction">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:denominator">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: short" name = "gco:Integer"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:extent">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:EX_Extent">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:geographicElement">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:EX_GeographicBoundingBox">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:westBoundLongitude">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: float" name = "gco:Decimal"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gex:eastBoundLongitude">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: float" name = "gco:Decimal"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gex:southBoundLatitude">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: float" name = "gco:Decimal"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gex:northBoundLatitude">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: float" name = "gco:Decimal"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:resourceMaintenance">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mmi:MD_MaintenanceInformation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mmi:maintenanceAndUpdateFrequency">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mmi:contact">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Responsibility">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:role">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:party">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Organisation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:name">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:contactInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Contact">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:phone">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Telephone">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:number">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:numberType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:address">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Address">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:deliveryPoint">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:city">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:postalCode">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: short" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:country">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:electronicMailAddress">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:descriptiveKeywords"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:MD_Keywords">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mri:keyword">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:type">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:thesaurusName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Citation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:title">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:alternateTitle">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: Date" name = "gco:Date"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:dateType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:resourceConstraints">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mco:MD_LegalConstraints">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mco:accessConstraints">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mco:useConstraints">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mco:otherConstraints">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:defaultLocale">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "lan:PT_Locale">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "lan:language">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "lan:country">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "lan:characterEncoding">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mri:supplementalInformation">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+<xs:attribute type="xs:string" name="gco:nilReason"/>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:contentInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:MD_ImageDescription">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:attributeDescription">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:RecordType"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:processingLevelCode">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Identifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:code">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:attributeGroup">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:MD_AttributeGroup">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:contentType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:attribute"  maxOccurs="unbounded" minOccurs="0" >
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:MD_Band">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:sequenceIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:sequenceIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:sequenceIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:MD_Band">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:sequenceIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:sequenceIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrc:MD_Band">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrc:sequenceIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:MemberName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "gco:attributeType">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:TypeName">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gco:aName">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mdb:resourceLineage">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:LI_Lineage">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:scope">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Scope">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:level">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:source">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:LI_Source">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:description">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:sourceCitation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Citation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:title">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:alternateTitle">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: Date" name = "gco:Date"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:dateType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:sourceMetadata">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Citation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:title">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:alternateTitle">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:CI_Date">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "cit:date">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: Date" name = "gco:Date"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "cit:dateType">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:scope">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Scope">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:level">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mcc:extent">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:EX_Extent">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:geographicElement">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:EX_GeographicDescription">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "gex:geographicIdentifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:MD_Identifier">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mcc:code">
+<xs:complexType>
+<xs:sequence>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:processStep">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:LE_ProcessStep">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:description">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:description">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:LE_ProcessStep">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:description">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name = "mrl:LE_ProcessStep">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "mrl:description">
+<xs:complexType>
+<xs:sequence>
+<xs:element type = " xs: string" name = "gco:CharacterString"/>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+</xs:complexType>
+</xs:element>
+ </xs:sequence>
+<xs:attribute type = "xs:string" name = "xmlns:mdb"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>
