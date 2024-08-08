@@ -1,4 +1,4 @@
-# ventera_test  
+# love_ventera  
 Postgres/PostGIS and Python code for Ventera Postgres Database Engineer Coding Challenge
 
 ### Challenge 1
