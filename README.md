@@ -72,7 +72,7 @@ Git (version may not important but with bin directory in %PATH% for access to 's
   ```   
 
 Below is QGIS screenshot with the final table **colorado_county_buffer_lines** (in red):
-![image](data/images/Challenge_1_CO_County.jpg)
+![image](data/images/Challenge_1_CO_County.png)
 *****************************************************************************************************************************
 
 
