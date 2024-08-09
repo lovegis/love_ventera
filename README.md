@@ -53,10 +53,10 @@ Git (version may not important but with bin directory in %PATH% for access to 's
 
 * Alter the database HOST and PORT in 2 locations to the host location (IP address or named server) and port number
     * src/love_ventera.sh (lines 4 and 7) \
-    ![image](data/images/host_port_2.jpg) 
+    ![image](data/images/host_port_2.JPG) 
     
     * src/venpy.py (lines 9 and 10) \
-    ![image](data/images/host_port_1.jpg) 
+    ![image](data/images/host_port_1.JPG) 
 
 
 6. Run a shell script within the `(love_ventera)` virtual environment to run psql commands and python SQLAlchemy commands against the database: \
@@ -72,7 +72,7 @@ Git (version may not important but with bin directory in %PATH% for access to 's
   ```   
 
 Below is QGIS screenshot with the final table **colorado_county_buffer_lines** (in red):
-![image](data/images/Challenge_1_CO_County.png)
+![image](data/images/Challenge_1_CO_County.PNG)
 *****************************************************************************************************************************
 
 
